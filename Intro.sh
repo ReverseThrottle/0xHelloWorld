@@ -1,4 +1,5 @@
 #!/bin/sh
+
 #declaring variables and there values
 student=ReverseThrottle
 school=University of Advancing Technology
