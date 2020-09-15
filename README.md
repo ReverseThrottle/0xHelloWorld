@@ -1,2 +1,2 @@
-# 0xHelloWorld
-Scripts, C++, CTFs, Malware Analysis
+# 0xSimpleScripts
+A repository of some scripts that I am working on or have finsihed.
