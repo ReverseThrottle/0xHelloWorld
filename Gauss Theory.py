@@ -1,9 +1,9 @@
-GNU nano 4.8                                                                 Project_3.2.py                                                                  Modified  
 #!/usr/bin/python3
 
 #highNum = input("Enter Even Number: ")
 #print(highNum)
 listNum = [i for i in range(1,int(101))]
+
 #while loop
 i = 0
 popval = 98
@@ -13,7 +13,6 @@ count = 0
 highNum = 100
 lowNum = 1
 gaussNum = 0
-gaussDiv = 2
 
 while i < 50:
         x = listNum.pop(0)
@@ -30,6 +29,7 @@ while i < 50:
 
 print("Total Parial Sums: {}\n".format(totalCount))
 
-print("({} + {}) * ({} / {})".format(lowNum, highNum, highNum, gaussDiv))
-gaussNum = (lowNum + highNum) * (highNum / gaussDiv)
+print("({} + {}) * ({})".format(lowNum, highNum, totalCount))
+gaussNum = (lowNum + highNum) * (totalCount)
 print("Gauss Multiplication: {}".format(gaussNum))
+
