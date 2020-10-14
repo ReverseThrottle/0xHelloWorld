@@ -1,20 +1,22 @@
+  GNU nano 4.8                                                                 Project_3.2.py                                                                            
 #!/usr/bin/python3
 
-#highNum = input("Enter Even Number: ")
-#print(highNum)
-listNum = [i for i in range(1,int(101))]
+highNum = input("Enter Even Number: ")
+whileVar = int(highNum) / 2
+listNum = int(highNum) + 1
+
+listNum = [i for i in range(1,int(listNum))]
 
 #while loop
 i = 0
-popval = 98
+popval = int(highNum) - 2
 totalCount = 0
 count = 0
 #Gauss Mult
-highNum = 100
 lowNum = 1
 gaussNum = 0
 
-while i < 50:
+while i < int(whileVar):
         x = listNum.pop(0)
         y = listNum.pop(popval)
         print("{} + {}".format(x, y))
@@ -30,6 +32,6 @@ while i < 50:
 print("Total Parial Sums: {}\n".format(totalCount))
 
 print("({} + {}) * ({})".format(lowNum, highNum, totalCount))
-gaussNum = (lowNum + highNum) * (totalCount)
+gaussNum = (int(lowNum) + int(highNum)) * (totalCount)
 print("Gauss Multiplication: {}".format(gaussNum))
 
