@@ -1,7 +1,7 @@
   GNU nano 4.8                                                                 Project_3.2.py                                                                            
 #!/usr/bin/python3
 
-highNum = input("Enter Even Number: ")
+highNum = input("Enter Number to be Gaussed: ")
 whileVar = int(highNum) / 2
 listNum = int(highNum) + 1
 
@@ -33,5 +33,4 @@ print("Total Parial Sums: {}\n".format(totalCount))
 
 print("({} + {}) * ({})".format(lowNum, highNum, totalCount))
 gaussNum = (int(lowNum) + int(highNum)) * (totalCount)
-print("Gauss Multiplication: {}".format(gaussNum))
-
+print("Gaussed Number: {}".format(gaussNum))
